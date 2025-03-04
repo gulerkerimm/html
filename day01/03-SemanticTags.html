@@ -1,43 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Formatting Tags</title>
+  </head>
+  <body>
+    <!-- COMMENT (Yourm Satırı) Bu satır ekranda görünmeyecektir. -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic Tags</title>
-</head>
+    <!-- HEADING (Başlık) -->
+    <!-- h1 en kapsamlı ve ilk yazılması gereken başlıktır. SEO açısından önemlidir. h taglerini sırasına uygun kullanmamız gerekir. -->
+    <h1>Başlık 1</h1>
+    <h2>Başlık 2</h2>
+    <h3>Başlık 3</h3>
+    <h4>Başlık 4</h4>
+    <h5>Başlık 5</h5>
+    <h6>Başlık 6</h6>
 
-<body>
-    <h1>Semantic Tags</h1>
-    <p>This is a paragraph.</p>
-    <strong>strong tag i yazıyı kalın bir şekilde yazar.</strong><!-- sementic bir şekilde -->
-    <br>
-    <b>b tag i yazıyı kalın bir şekilde yazar </b>
+    <!-- PARAGRAPH (Paragraf) -->
+    <!-- lorem -->
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 
-    <br> <br>
+      <!-- KALIN - Semantic -->
+      <strong>Eligendi eius</strong>
 
-    <em>em tag i italic yazar</em><!-- Semantic -->
-    <br>
-    <i>i tagi italic yazar</i>
-    <br><br>
-    <ins>ins tagi altı çizili yazar</ins><!-- Semantic -->
-    <br>
-    <u>u tagi altı çizili yazar</u>
+      enim ratione pariatur perferendis sunt magni,
 
-    <br><br>
-    <p>Dev İndirim <del>1000 Tl </del>değil,999.99 Tl de değil ,<s>999.8 Tl </s>de değil,tamı tamı tamına <strong> 999.5 Tl</strong>.</p>
-    <p>Lorem, ipsum dolor sit amet <mark>consectetur</mark> adipisicing elit. Esse animi quidem dolor provident atque libero ut nihil quasi, sit vel dolorem in fuga corrupti doloribus qui, sed voluptatum ad earum.</p>
-    <pre>
-        let x = 5;
-        let y = 10;
-        console.log(x + y);
+      <!-- KALIN - Non-Semantic -->
+      <b> harum, sint laudantium </b>
+
+      nisi ducimus aspernatur tempore! Debitis voluptatum reprehenderit nulla
+      omnis quidem quis.
+    </p>
+
+    <!-- HORIZONTAL ROW (Yatay Satır) -->
+    <hr />
+
+    <!-- lorem5 -->
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <!-- HORIZONTAL ROW (Yatay Satır) -->
+    <hr />
+
+    <!-- lorem*3 -->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+      <!-- İTALİK - Semantic -->
+      <em>
+        Sint, voluptates corrupti dolorem ab rerum deleniti ullam sapiente nam
+        consectetur </em
+      >delectus unde suscipit blanditiis reiciendis
+
+      <!-- İTALİK - Non-semantic -->
+      <i>asperiores officia illo</i> praesentium consequuntur.
+
+      <!-- BREAK (Boşluk) -->
+      <br />
+      Voluptatum. Consequatur nihil esse maiores totam libero possimus
+      consectetur perferendis temporibus aut facilis fugit similique,
+      dignissimos hic culpa, dolore ab ducimus commodi explicabo nobis.
+      Obcaecati, delectus natus.
+      <!-- BREAK (Boşluk) -->
+      <br />
+      Excepturi ad illum velit. Rerum totam quam excepturi, incidunt illum magni
+      sit, 
+      
+      <!-- UNDERLINE (Altı çizili) -->
+      <u>suscipit fugiat laudantium</u> veritatis iure quasi minima perferendis
+      harum vitae reprehenderit voluptatum nihil ullam et saepe officia quae!
+      Nam repellat ut voluptatum!
+    </p>
+
+    <!-- HORIZONTAL ROW (Yatay Satır) -->
+    <hr />
+
+    <!-- alt + yön tuşları (aşağı veya yukarı) => satırı üst veya alt satıra taşır. -->
+
+    <p>
+      Lorem ipsum dolor 
+      <br>
+      İndirmsiz Fiyat: 
+
+      <!-- DELETE (Üstü çizili) -->
+      <del>999</del>$
+      
+      İndirimli Fiyat: 899$ 
+      <br>
+      sit amet consectetur adipisicing elit. Aliquid maxime culpa veniam quo tempore minus harum odio sit repudiandae vero.
+    </p>
+
+    <!-- Preformatted Text - (Ön Biçimlendirilmiş Yazı) -->
+    <pre> 
+      let animals = 10;  
+      Hello            World
     </pre>
+    <p> Hello               World </p>
 
-    <address>Fevzi Çakmak mah. 6546 sok bo:5/4</address>
-    <p>Ünlü bir şair <cite>"Hayat acımasız"</cite></p>
-    <p><cite>Kürk Mantolu Madonna</cite> kitabını severim</p>
-    <p>H<sub>2</sub>SO<sub>4</sub></p>
-    <p>x<sup>2</sup> +y<sup>2</sup> =z<sup>2</sup></p>
-</body>
+    <!-- HORIZONTAL ROW (Yatay Satır) -->
+    <hr>
 
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, perferendis 
+      
+      <!-- MARK (Highlight) -->
+      <mark>provident maiores iure</mark>
+      
+      minus at veniam ut repellendus corporis autem excepturi enim placeat quos ad animi sequi quidem labore quas!
+      
+    </p>
+
+    <!-- SUBSCRIPT (Alt yazı) -->
+    <p>log<sub>10</sub> H<sub>2</sub>O</p>
+
+    <!-- SUPERSCRIPT (Üst Yazı) -->
+     <p>X <sup>2</sup> - Y <sup>2</sup> = (X-Y)*(X+Y)</p>
+
+  </body>
 </html>
