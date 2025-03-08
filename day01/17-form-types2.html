@@ -10,56 +10,50 @@
 
     <form>
       <!-- CHECKBOX => birden fazla kutucuğun seçilmesine olanak sağlayar. -->
+      
       <input type="checkbox" id="kabul" name="kabul" />
       <label for="kabul">Kabul Et</label>
 
-      <br />
+      <br>
 
       <!-- Grouping => gruplamak için aynı name yazmamız gerekir. -->
       <input type="checkbox" id="gitar" name="hobiler" value="gitar" />
       <label for="gitar">Gitar Çalmak</label>
 
-      <input type="checkbox" name="hobiler" id="yuzmek" value="yuzmek" />
+      <input type="checkbox" name="hobiler" id="yuzmek" value="yuzmek">
       <label for="yuzmek">Yüzmek</label>
 
-      <input type="checkbox" name="hobiler" id="futbol" value="futbol" />
+      <input type="checkbox" name="hobiler" id="futbol" value="futbol">
       <label for="futbol">Futbol Oynamak</label>
 
-      <br />
-
-      <!-- RADIO => name özelliği aynı olan birden fazla seçenekten sadece birisinin seçilmesine olanak sağlar. -->
-
-      <input type="radio" name="cinsiyet" id="kadin" value="kadin" />
-      <label for="kadin">Kadın</label>
-
-      <input type="radio" name="cinsiyet" id="erkek" value="erkek" />
-      <label for="erkek">Erkek</label>
-
-      <input type="radio" name="cinsiyet" id="diğer" value="diğer" />
-      <label for="diğer">Diğer</label>
-
-      <br />
-
-      <!-- FILE => bilgisayardan dosya eklenmesi için kullanılır -->
-
-      <label for="dosya">Dosya seçiniz</label>
-      <input type="file" name="dosya" id="dosya" />
-
-      <br />
-
-      <!-- COLOR => renk seçilmesini sağlar -->
-      <label for="renk">Renk Seçiniz</label>
-      <input type="color" name="renk" id="renk" />
 
       <br>
 
-      <!-- RANGE => kayrıdırlabilir değeri atanmasına yarar. -->
+      <!-- RADIO => name özelliği aynı olan birden fazla seçenekten sadece birisinin seçilmesine olanak sağlar. -->
 
-      <label for="aralik">Aralık</label>
-      <input type="range" name="aralik" id="aralik">
+      <input type="radio" name="cinsiyet" id="kadin" value="kadin">
+      <label for="kadin">Kadın</label>
 
+            <input type="radio" name="cinsiyet" id="erkek" value="erkek">
+      <label for="erkek">Erkek</label>
+
+            <input type="radio" name="cinsiyet" id="diğer" value="diğer">
+      <label for="diğer">Diğer</label>
+      <!--  FILe bilgisayardaki dosya eklenmesi için kullanılır  -->
+
+      <label for="dosya">dosya yükleyiniz</label>
+      <input type="file" name="dosya" id="dosya" accept="image/png, image/jpeg" multiple>
       
+      <hr>
+      <!-- COLOR -->
 
+       <label for="renk">renk seç: </label>
+      <input type="color" name="renk" id="renk">
+      <hr>
+      <!-- Range -->
+
+      <label for="miktar">Miktar Seçiniz</label>
+      <input type="range" name="miktar" id="miktar" min="0" max="20" step="1">
 
     </form>
   </body>
