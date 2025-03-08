@@ -7,6 +7,14 @@
   </head>
   <body>
     <h1>Form Types</h1>
+    <!-- Text: Genel bilgi girişi için kullanılır
+      Password: Şifre girişi için kullanılır. Girilen değer gösterilmez
+      Number: Sadece rakam girişi için kullanılır
+      Search: Arama kutusu olarak kullanılır. Köşede textbox ı boşaltan küçük bir işaret çıkar
+      url: Sadece http, https ile başlayan ifadeleri kabul eder.
+      Email: Sadece eposta girişlerini kabul eder
+      Hidden: Gizli bilgi göndermek için kullanılır.
+      Tel: Telefon numarası formatinda girişleri kabul eder -->
 
     <form>
       <!-- İsim -->
@@ -28,7 +36,7 @@
         type="text"
         id="soyisim"
         name="soyisim"
-        placeholder="Soyisminizi giriniz."
+        placeholder="Soy isminizi giriniz."
       />
 
       <br />
@@ -38,6 +46,7 @@
       <label for="yas">Yaş</label>
       <input
         type="number"
+        min="0"
         id="yas"
         name="yas"
         placeholder="Yaşınızı giriniz."
@@ -97,28 +106,25 @@
         placeholder="Telefon Numaranızı giriniz."
       />
 
-      <br>
+      <br />
 
       <!-- HIDDEN => inputu görünmez hale getirir (kullanıcının görmesine gerek olmayan veya görmemesi gereken data aktarımı için kullanılır. Genellikle value değerine yer verilir.) -->
-       <input type="hidden" name="userId" value="123">
+      <input type="hidden" name="userId" value="123" />
 
       <br />
 
       <!-- SUBMIT => Form gönderme aksiyonunu gerçekleştirmek için kullanılır. -->
       <input type="submit" value="Gönder" />
 
-      <br> 
+      <br />
 
       <!-- BUTTON => aksiyon atanması durumunda askiyonu gerçekleştirir. Atama olmadığı zaman işlevsizdir. -->
-      <input type="button" value="Button">
+      <input type="button" value="Button" />
 
-      <br>
+      <br />
 
       <!-- RESET => girilen değerlerin eski haline getirilmesine yarar. -->
-       <input type="reset" value="Temizle">
-
-
-       
+      <input type="reset" value="Temizle" />
     </form>
   </body>
 </html>
